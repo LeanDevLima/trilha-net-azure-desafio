@@ -1,41 +1,31 @@
-# DIO - Trilha .NET - Nuvem com Microsoft Azure
-www.dio.me
+# Desafio Concluído com Sucesso!
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de Nuvem com Microsoft Azure, da trilha .NET da DIO.
+## Projeto DIO - Trilha .NET - Nuvem com Microsoft Azure
+[www.dio.me](www.dio.me)
 
-## Contexto
-Você precisa construir um sistema de RH, onde para essa versão inicial do sistema o usuário poderá cadastrar os funcionários de uma empresa. 
+### Desafio de Projeto
+Concluí com sucesso o desafio proposto, aplicando seus conhecimentos adquiridos no módulo de Nuvem com Microsoft Azure da trilha .NET da DIO.
 
-Essa cadastro precisa precisa ter um CRUD, ou seja, deverá permitir obter os registros, criar, salvar e deletar esses registros. A sua aplicação também precisa armazenar logs de toda e qualquer alteração que venha a ocorrer com um funcionário.
+### Contexto
+Construí um sistema de Recursos Humanos (RH) para a versão inicial do sistema, permitindo o cadastro de funcionários em uma empresa. O sistema possui operações CRUD (Criar, Ler, Atualizar e Deletar) e registra logs de todas as alterações nos funcionários.
 
-## Premissas
-A sua aplicação deverá ser do tipo Web API, Azure Functions ou MVC, fique a vontade para implementar a solução que achar mais adequado.
+### Premissas
+A aplicação é uma Web API implantada no Microsoft Azure, utilizando o App Service para a API, SQL Database para o banco relacional e Azure Table para armazenar logs.
 
-A sua aplicação deverá ser implantada no Microsoft Azure, utilizando o App Service para a API, SQL Database para o banco relacional e Azure Table para armazenar os logs.
+As logs de alterações nos funcionários são armazenadas na Azure Table.
 
-A sua aplicação deverá armazenar os logs de todas as alterações que venha a acontecer com o funcionário. Os logs deverão serem armazenados em uma Azure Table.
-
-A sua classe principal, a classe Funcionario e a FuncionarioLog, deve ser a seguinte:
+A estrutura das classes principais, Funcionario e FuncionarioLog, segue o diagrama abaixo:
 
 ![Diagrama da classe Funcionario](Imagens/diagrama_classe.png)
 
-A classe FuncionarioLog é filha da classe Funcionario, pois o log terá as mesmas informações da Funcionario.
-
-Não se esqueça de gerar a sua migration para atualização no banco de dados.
-
-## Métodos esperados
-É esperado que você crie o seus métodos conforme a seguir:
-
+### Métodos Implementados
+A implementação dos métodos segue o Swagger e os endpoints conforme especificado:
 
 **Swagger**
 
-
 ![Métodos Swagger](Imagens/swagger.png)
 
-
 **Endpoints**
-
 
 | Verbo  | Endpoint                | Parâmetro | Body               |
 |--------|-------------------------|-----------|--------------------|
@@ -44,7 +34,7 @@ Não se esqueça de gerar a sua migration para atualização no banco de dados.
 | DELETE | /Funcionario/{id}       | id        | N/A                |
 | POST   | /Funcionario            | N/A       | Schema Funcionario |
 
-Esse é o schema (model) de Funcionario, utilizado para passar para os métodos que exigirem:
+Aqui está o schema (model) de Funcionario utilizado nos métodos:
 
 ```json
 {
@@ -59,10 +49,13 @@ Esse é o schema (model) de Funcionario, utilizado para passar para os métodos 
 ```
 
 ## Ambiente
-Este é um diagrama do ambiente que deverá ser montado no Microsoft Azure, utilizando o App Service para a API, SQL Database para o banco relacional e Azure Table para armazenar os logs.
+O ambiente foi montado no Microsoft Azure, conforme o diagrama abaixo:
 
 ![Diagrama da classe Funcionario](Imagens/diagrama_api.png)
+![Diagrama Azure](Imagens/azure.png)
 
 
 ## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima, incluindo a sua publicação na nuvem.
+O código fornecido estava pela metade, e eu dei continuidade obedecendo às regras descritas acima. Todas as implementações, incluindo a publicação na nuvem, foram realizadas com sucesso.
+
+Parabéns novamente por completar o desafio! Se tiver mais desafios ou dúvidas, fique à vontade para explorar novos projetos.
