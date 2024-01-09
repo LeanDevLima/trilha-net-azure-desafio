@@ -58,4 +58,4 @@ O ambiente foi montado no Microsoft Azure, conforme o diagrama abaixo:
 ## Solução
 O código fornecido estava pela metade, e eu dei continuidade obedecendo às regras descritas acima. Todas as implementações, incluindo a publicação na nuvem, foram realizadas com sucesso.
 
-Parabéns novamente por completar o desafio! Se tiver mais desafios ou dúvidas, fique à vontade para explorar novos projetos.
+Me sinto grato por completar o desafio! 
